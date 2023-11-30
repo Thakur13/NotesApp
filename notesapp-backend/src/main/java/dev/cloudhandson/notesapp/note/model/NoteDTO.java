@@ -1,25 +1,23 @@
-package dev.cloudhandson.notesapp.note;
-
-import jakarta.persistence.*;
+package dev.cloudhandson.notesapp.note.model;
 
 import java.io.Serializable;
 
-@Entity
-@Table(name = "note")
-public class NoteEntity implements Serializable {
+public class NoteDTO implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
-    @Column(name = "NOTE_ID", nullable = false, unique = true)
     private String noteId;
-
-    @Column(name = "TITLE", columnDefinition = "TEXT NOT NULL UNIQUE")
     private String title;
-
-    @Column(name = "DESCRIPTION", columnDefinition = "TEXT")
     private String description;
+
+    public NoteDTO() {
+    }
+
+    public NoteDTO(Long id, String noteId, String title, String description) {
+        this.id = id;
+        this.noteId = noteId;
+        this.title = title;
+        this.description = description;
+    }
 
     public Long getId() {
         return id;
