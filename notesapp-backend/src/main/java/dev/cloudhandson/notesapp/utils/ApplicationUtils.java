@@ -16,6 +16,10 @@ public class ApplicationUtils {
         return generateRandomString(length);
     }
 
+    public String generateUserId(int length) {
+        return generateRandomString(length);
+    }
+
     public String generateRandomString(int length) {
         StringBuilder randomString = new StringBuilder();
         for (int i = 0; i < length; i++) {

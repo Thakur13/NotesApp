@@ -1,6 +1,6 @@
 package dev.cloudhandson.notesapp.note;
 
-public class NoteNotFoundException extends RuntimeException{
+public class NoteNotFoundException extends RuntimeException {
     public NoteNotFoundException() {
     }
 

@@ -2,7 +2,7 @@ package dev.cloudhandson.notesapp.note.model;
 
 import java.io.Serializable;
 
-public class NoteDTO implements Serializable {
+public class NoteDTO {
 
     private Long id;
     private String noteId;

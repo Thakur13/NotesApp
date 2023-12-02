@@ -1,6 +1,7 @@
 package dev.cloudhandson.notesapp.note;
 
 import dev.cloudhandson.notesapp.note.model.NoteDTO;
+import dev.cloudhandson.notesapp.note.model.NoteEntity;
 import dev.cloudhandson.notesapp.utils.ApplicationUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

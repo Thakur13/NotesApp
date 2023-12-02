@@ -1,4 +1,4 @@
-package dev.cloudhandson.notesapp.note;
+package dev.cloudhandson.notesapp.note.model;
 
 import jakarta.persistence.*;
 
